@@ -50,7 +50,7 @@ class Rocket(object):
     def launch(self):
         if self.type_of_rocket == 'falcon1':
             self.fuel_level -= 1
-        else:
+        elif self.type_of_rocket == 'falcon9':
             self.fuel_level -= 9
         self.number_of_launches += 1
 
@@ -59,7 +59,7 @@ class Rocket(object):
         if self.type_of_rocket == 'falcon1':
             used_fuel = 5 - self.fuel_level
             self.fuel_level = 5
-        else:
+        elif self.type_of_rocket == 'falcon9':
             used_fuel = 20 - self.fuel_level
             self.fuel_level = 20
         return used_fuel
