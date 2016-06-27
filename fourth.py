@@ -75,6 +75,7 @@ class SpaceX(object):
 
     def addRocket(self, rocket):
         self.rockets.append(rocket)
+        self.launches += rocket.number_of_launches
 
     def refill_all(self):
         for rocket in self.rockets:
