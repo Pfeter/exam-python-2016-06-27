@@ -11,9 +11,13 @@ class TestCountLetterInString(unittest.TestCase):
         result = count_letter_in_string('apple', 'p')
         self.assertEqual(2, result)
 
-    def test_count_number_incorrect(self):
+    def test_counting_number_is_not_correct(self):
         result = count_letter_in_string('apple1', '1')
         self.assertFalse(1, result)
+
+    def test_counting_upper_and_lowercase_too(self):
+        result = count_letter_in_string('Appeal', 'a')
+        self.assertEqual(2, result)
 
 if __name__ == '__main__':
     unittest.main()
