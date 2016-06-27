@@ -11,5 +11,3 @@ def second_elements(input_list):
         return output
     else:
         raise
-
-print(second_elements([1, 2, 3, 4, 5]))
